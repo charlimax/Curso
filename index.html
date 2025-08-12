@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page sin Dominio ni Hosting</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9f9f9, #e8ecf3);
+            color: #333;
+        }
+
+        /* Logo fijo */
+        .logo-box {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .logo-box img {
+            max-width: 60px;
+            height: auto;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 100px auto 0;
+            padding: 20px;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Sección de texto */
+        .text-section {
+            flex: 1 1 450px;
+        }
+
+        .text-section h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        .benefits {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .benefits li {
+            background: white;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            font-size: 1rem;
+        }
+
+        .benefits li span {
+            font-size: 1.2rem;
+        }
+
+        /* Botones */
+        .btn {
+            display: inline-block;
+            padding: 14px 22px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+            text-align: center;
+            min-width: 200px;
+            margin-right: 10px;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebe5b;
+        }
+
+        .btn-fiverr {
+            background-color: #1dbf73;
+            color: white;
+        }
+
+        .btn-fiverr:hover {
+            background-color: #19a866;
+        }
+
+        /* Sección de imagen */
+        .image-section {
+            flex: 1 1 450px;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 350px;
+            height: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                margin-top: 140px;
+            }
+
+            .btn {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+
+            .logo-box {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Logo fijo -->
+<div class="logo-box">
+    <img src="logo.png" alt="Logo Empresa" />
+</div>
+
+<div class="container">
+    <div class="text-section">
+        <h1>Landing Page sin dominio ni Hosting</h1>
+
+        <ul class="benefits">
+            <li><span>📱</span> Totalmente responsive (móvil, tablet y PC)</li>
+            <li><span>🔗</span> Links para todas tus redes sociales</li>
+            <li><span>🤝</span> Fácil de compartir con tus clientes</li>
+            <li><span>🚀</span> Sin dominio ni hosting requerido</li>
+            <li><span>🎨</span> Diseño profesional y atractivo</li>
+        </ul>
+
+        <a href="https://wa.me/573023178030" class="btn btn-whatsapp">📩 Más Información</a>
+        <a href="https://es.fiverr.com/carlosjimnez723/social-media-landing-page-builder-91c2" class="btn btn-fiverr">💼 Contratar en Fiverr</a>
+    </div>
+
+    <div class="image-section">
+        <img src="landingpagefiverr.png" alt="Ejemplo Landing Page" />
+    </div>
+</div>
+
+</body>
+</html>
